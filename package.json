@@ -2,46 +2,46 @@
   "name": "quizpage",
   "description": "a really cool app",
   "version": "1.0.0",
+  "cacheDirectories": [
+    "client/node_modules",
+    "server/node_modules"
+  ],
   "engines": {
-    "node": "14.x",
+    "node": "v16.5.0",
     "npm": "6.x"
-
   },
-
-
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
     "build": "ng build",
-    "heroku-postbuild": "ng build --prod",
+    "heroku-postbuild": "echo This runs after Heroku installs dependencies, but before Heroku prunes and caches dependencies.",
     "heroku-prebuild": "echo This runs before Heroku installs dependencies.",
-  "heroku-postbuild": "echo This runs after Heroku installs dependencies, but before Heroku prunes and caches dependencies.",
-  "heroku-cleanup": "echo This runs after Heroku prunes and caches dependencies."
+    "heroku-cleanup": "echo This runs after Heroku prunes and caches dependencies."
   },
   "dependencies": {
     "ejs": "^3.1.5",
     "express": "^4.15.2"
+
   },
+
   "devDependencies": {
     "got": "^11.3.0",
     "tape": "^4.7.0"
   },
+
   "repository": {
     "type": "git",
-    "url": "https://github.com/heroku/node-js-getting-started"
+    "url": "git+https://github.com/heroku/node-js-getting-started.git"
   },
   "keywords": [
     "node",
     "heroku",
     "express"
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/heroku/node-js-getting-started/issues"
+  },
+  "homepage": "https://github.com/heroku/node-js-getting-started#readme",
+  "author": "Austin John Aaro"
 }
-
-     
-    
-
-
-
-
-  
