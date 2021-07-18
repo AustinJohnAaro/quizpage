@@ -1,6 +1,6 @@
 console.log ("quizpage.js")
 
- req = require('request') 
+
  window.addEventListener('load', yourFunction, false);
  // ..... or 
  window.addEventListener('DOMContentLoaded', yourFunction, false);
