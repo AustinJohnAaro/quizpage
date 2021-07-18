@@ -1,5 +1,5 @@
 console.log ("quizpage.js")
-var submitBtn=Document.getElementById('submitbtn')
+
  req = require('request') 
  window.addEventListener('load', yourFunction, false);
  // ..... or 
