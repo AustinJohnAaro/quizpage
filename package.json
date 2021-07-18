@@ -1,0 +1,47 @@
+{
+  "name": "quizpage",
+  "description": "a really cool app",
+  "version": "1.0.0",
+  "engines": {
+    "node": "14.x",
+    "npm": "6.x"
+
+  },
+
+
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "build": "ng build",
+    "heroku-postbuild": "ng build --prod",
+    "heroku-prebuild": "echo This runs before Heroku installs dependencies.",
+  "heroku-postbuild": "echo This runs after Heroku installs dependencies, but before Heroku prunes and caches dependencies.",
+  "heroku-cleanup": "echo This runs after Heroku prunes and caches dependencies."
+  },
+  "dependencies": {
+    "ejs": "^3.1.5",
+    "express": "^4.15.2"
+  },
+  "devDependencies": {
+    "got": "^11.3.0",
+    "tape": "^4.7.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/heroku/node-js-getting-started"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
+  "license": "MIT"
+}
+
+     
+    
+
+
+
+
+  
