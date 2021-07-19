@@ -1,32 +1,30 @@
-console.log ("quizpage.js")
 
-
- window.addEventListener('load', yourFunction, false);
- // ..... or 
- window.addEventListener('DOMContentLoaded', yourFunction, false);
- 
  
 
-const form = document.getElementById('');
-const log = document.getElementById('');
-submitBtn.addEventListener('submit', logSubmit);
-window.onload = function(){
-  (function(){
-    var counter = 5;
-    setInterval(function() {
-      counter--;
-      if (counter >= 0) {
-        span = document.getElementById("count");
-        span.innerHTML = counter;
-      }
-      if (counter === 0) {
-          alert('sorry, out of time');
-          clearInterval(counter);
-      }
-    }, 1000);
-  })();
+ exports.uppercase = str => str.toUpperCase()
+ exports.a = 1 
+ 
+   
+  
+  methods: {
+      
+  };
+  {
+   
+      
   }
-  var timer = document.getElementById("mytime");
+  methods: {
+      
+          console.log("window load event");
+      }
+  
+; 
+
+
+
+
+
+  
   var counter = setInterval(function(){
     countdown()}, 1000);
   //user clicks the 'start' button and timer starts counting down
@@ -38,9 +36,9 @@ window.onload = function(){
   };
   
   
-  var click = document.getElementById("btn");
-  btn.addEventListener("click", countdown); //"click" as DOM Object?
-  btn.addEventListener("click", stopcounting);
+  
+  //"click" as DOM Object?
+  
 function logSubmit(event) {
   log.textContent = `Form Submitted! Time stamp: ${event.timeStamp}`;
   event.preventDefault();
@@ -61,9 +59,8 @@ function logSubmit(event) {
     })();
     }
 }
-var timerEl = document.getElementById('countdown');
-var mainEl = document.getElementById('main');
-var startBtn = document.getElementById('start');
+
+
 
 var message =
   'Congratulations! Now you are prepared to tackle the Challenge this week! Good luck!';
@@ -78,16 +75,16 @@ function countdown() {
     // As long as the `timeLeft` is greater than 1
     if (timeLeft > 1) {
       // Set the `textContent` of `timerEl` to show the remaining seconds
-      timerEl.textContent = timeLeft + ' seconds remaining';
+      
       // Decrement `timeLeft` by 1
       timeLeft--;
     } else if (timeLeft === 1) {
       // When `timeLeft` is equal to 1, rename to 'second' instead of 'seconds'
-      timerEl.textContent = timeLeft + ' second remaining';
+      
       timeLeft--;
     } else {
       // Once `timeLeft` gets to 0, set `timerEl` to an empty string
-      timerEl.textContent = '';
+      
       // Use `clearInterval()` to stop the timer
       clearInterval(timeInterval);
       // Call the `displayMessage()` function
@@ -105,16 +102,20 @@ function displayMessage() {
     if (words[wordCount] === undefined) {
       clearInterval(msgInterval);
     } else {
-      mainEl.textContent = words[wordCount];
+      
       wordCount++;
     }
   }, 300);
 }
 
-startBtn.onclick = countdown;
 
 
+console.log ("index.js") 
 
+var server = app.listen(process.env.PORT || 5000, function () {
+  var port = server.address().port;
+  console.log("Express is working on port " + port);
+});
 
   
 
